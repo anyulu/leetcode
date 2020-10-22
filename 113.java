@@ -41,6 +41,5 @@ class Solution {
             dfs(res, root.right, sum, path, currSum);
             path.remove(path.size()-1);
         }
-        currSum -= root.val;
     }
 }
