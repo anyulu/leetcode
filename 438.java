@@ -1,7 +1,6 @@
 class Solution {
     public List<Integer> findAnagrams(String str, String pattern) {
         List<Integer> resultIndices = new ArrayList<Integer>();
-        // TODO: Write your code here
         if (str.length() < pattern.length()) return resultIndices;
         int size = 0;
         int start = 0;
