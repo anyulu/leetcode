@@ -2,7 +2,6 @@ class Solution {
     public List<Integer> findSubstring(String str, String[] words) {
         List<Integer> resultIndices = new ArrayList<Integer>();
         List<Integer> finalRes = new ArrayList<Integer>();
-        // TODO: Write your code here
         if (str.length() < words.length*words[0].length()) return resultIndices;
         int start = 0;
         int n = words.length;
