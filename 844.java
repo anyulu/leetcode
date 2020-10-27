@@ -30,7 +30,6 @@ class Solution {
             i--;
             j--;
         }
-        if (i != -1 || j != -1) return false;
         return true;
     }
 }
