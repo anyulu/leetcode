@@ -1,6 +1,5 @@
 class Solution {
     public int monotoneIncreasingDigits(int N) {
-        if (N < 10) return N;
         int res = 0;
         int prev = N % 10;
         N /= 10;
