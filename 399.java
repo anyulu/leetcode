@@ -43,6 +43,7 @@ class Solution {
             double temp = dfs(edge.end, end, visit);
             if (temp != -1) return edge.val*temp;
         }
+        visit.remove(start);
         return -1;
     }
 }
