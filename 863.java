@@ -9,7 +9,6 @@
  */
 class Solution {
     Map<TreeNode, TreeNode> map;
-    TreeNode targetNode;
 
     public List<Integer> distanceK(TreeNode root, TreeNode target, int K) {
         map = new HashMap<>();
@@ -20,7 +19,6 @@ class Solution {
             int n = queue.size();
             while (n-- > 0) {
                 TreeNode tempNode = queue.poll();
-                if (tempNode.val == target.val) targetNode = tempNode;
                 if (tempNode.left != null) {
                     map.put(tempNode.left, tempNode);
                     queue.offer(tempNode.left);
@@ -32,7 +30,7 @@ class Solution {
             }
         }
         List<Integer> res = new ArrayList<>();
-        dfs(targetNode, res, K, new HashSet<>());
+        dfs(target, res, K, new HashSet<>());
         return res;
     }
 
