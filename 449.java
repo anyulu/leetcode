@@ -39,7 +39,7 @@ public class Codec {
         int x = -1, y = left+1;
         if (arr[left] > arr[left+1]) {
             x = left+1;
-            while (y < n) {
+            while (y <= right) {
                 if (arr[y] < arr[left]) y++;
                 else break;
             }
