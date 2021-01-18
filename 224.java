@@ -9,6 +9,7 @@ class Solution {
                 int curr = c-'0';
                 while (i+1 < s.length() && Character.isDigit(s.charAt(i+1))) {
                     curr = curr*10+s.charAt(i+1)-'0';
+                    i++;
                 }
                 res = res+sign*curr;
             } else if (c == '+') {
